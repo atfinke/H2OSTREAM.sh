@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 # H20STREAM.sh - Comprehensive Smart ZSH Script for Unreliable USB MP3 Player File Management
-# Author: [Your Name]
-# Date: [Current Date]
+# Author: Claude Sonnet 3.5
+# Date: 7/9/24
 # Version: 1.5
 
 # Description:
@@ -39,7 +39,6 @@
 DRIVE_NAME="H2OSTREAMDM"
 MOUNT_POINT="/Volumes/$DRIVE_NAME"
 WAIT_INTERVAL=5  # Interval in seconds for periodic logging while waiting for the drive
-LOG_FILE="$HOME/h20stream_log.txt"
 PROGRESS_WIDTH=50  # Width of the progress bar
 
 # Function: log_message
@@ -48,8 +47,6 @@ PROGRESS_WIDTH=50  # Width of the progress bar
 # Arguments:
 #   Message: The message to be logged
 log_message() {
-    local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    echo "$timestamp - $1" >> "$LOG_FILE"
     echo "$1"
 }
 
